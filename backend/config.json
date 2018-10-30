@@ -1,0 +1,26 @@
+{
+    "development": {
+
+        "username": "root",
+        "password": null,
+        "database": "taskmanager",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "test": {
+
+      "username": "root",
+      "password": null,
+      "database": "taskmanagert",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": null,
+      "database": "taskmanagerp",
+      "host": "localhost",
+      "dialect": "mysql"
+    }
+
+}
