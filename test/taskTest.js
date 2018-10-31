@@ -16,8 +16,9 @@ describe('GET /tasks', function () {
 
     it('respond with json containing a list of all tasks', function (done) {
         request(app)
-            .put('/api/tasks/edit')
+            .put('/api/tasks/edit/1')
             .set('Accept', 'application/json')
+            .send({ target: 1 })
             .expect('Content-Type', /json/)
             .expect(200, done);
     });
