@@ -22,3 +22,5 @@ console.log(err,"Something went wrong with the Database Update!");
 });
 
 app.listen(process.env.PORT || 3000);
+
+module.exports = app;

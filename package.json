@@ -8,12 +8,18 @@
     "express": "^4.16.4",
     "file-loader": "2.0.0",
     "fs-extra": "7.0.0",
+    "mocha": "^5.2.0",
     "mysql2": "^1.6.1",
     "sequelize": "^4.41.0",
     "url-loader": "1.1.1"
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node scripts/test.js"
+    "test": "cross-env NODE_ENV=test mocha test/taskTest.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "supertest": "^3.3.0"
   }
 }
